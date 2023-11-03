@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(to right bottom, pink, plum, magenta, purple);
+}
+
+.welcome{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.welcome > h1{
+    font-size: 60px;
+}
+.welcome.hide{
+    display: none;
+}
+
+.keys{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.key{
+    flex: 1 0 33%;
+    border: 2px solid black;
+    min-height: 33.33vh;
+}
+
+button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: none;
+    font-size: 40px;
+}
